@@ -1,0 +1,10 @@
+name: Update Action Pins
+
+on:
+  pull_request:
+    paths:
+      - ".github/workflows/**"
+
+jobs:
+  check-pins:
+    uses: ./.github/workflows/reusable-update-action-pins.yml
