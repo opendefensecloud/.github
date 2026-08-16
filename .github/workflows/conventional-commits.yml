@@ -1,0 +1,13 @@
+name: Conventional Commits
+
+on:
+  pull_request:
+    branches: ["main"]
+    types: [opened, edited, synchronize, reopened]
+
+permissions:
+  pull-requests: read
+
+jobs:
+  conventional-commits:
+    uses: ./.github/workflows/reusable-conventional-commits.yml

@@ -1,0 +1,11 @@
+name: Label issues
+
+on:
+  issues:
+    types:
+      - reopened
+      - opened
+
+jobs:
+  label_issues:
+    uses: ./.github/workflows/reusable-issues-add-labels.yml
